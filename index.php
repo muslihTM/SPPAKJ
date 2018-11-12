@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Silahkan Masuk Ke Aplikasi</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -24,11 +24,13 @@
       <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" name="password" class="form-control" placeholder="Kunci" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Eling Aku
-        </label>
-      </div>
+      <label for="select" class="sr-only">Level</label>
+      <select name="level" class="form-control" required>
+		<option value="">Pilih Level</option>
+		<option value="admin">Administrator</option>
+		<option value="operator">Operator</option>
+		<option value="kepsek">Kepala Sekolah</option>
+	  </select>
       <button class="btn btn-lg btn-success btn-block" type="submit">Masuk</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
