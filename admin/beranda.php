@@ -2,9 +2,9 @@
 error_reporting(0);
 session_start();
 include "../koneksi.php";
-if (!isset($_SESSION)){
+if (!isset($_SESSION['admin'])){
 	header('location:../index.php');
-}
+} else {
 
 ?>
 
@@ -170,3 +170,6 @@ if (!isset($_SESSION)){
     </script>
   </body>
 </html>
+<?php 
+}
+?>
