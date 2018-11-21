@@ -20,6 +20,9 @@ if(isset($_GET['p'])){
 		case 'refkelas':
 			include "kelas.php";
 			break;
+		case 'useredit':
+			include "useredit.php";
+			break;
 		default:
 			include "../404.php";
 			break;
